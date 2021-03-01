@@ -1,7 +1,7 @@
 package sk.stuba.fei.uim.oop.car;
 
 public class Auto {
-    private static final double FUEL_PER_KM = 0.5;
+    private static final double FUEL_PER_KM = 0.2;
 
     private double kapacitaNadrze;
     private double stavNadrze;
@@ -9,6 +9,7 @@ public class Auto {
 
     public Auto() {
         neojazdene = true;
+        kapacitaNadrze = 100;
     }
 
     public void drive(double distanceInKm) {
@@ -19,8 +20,10 @@ public class Auto {
         }
     }
 
-    public void setStavNadrze(double stavNadrze) {
-        this.stavNadrze = stavNadrze;
+    public double dotankovat() {
+        double diff = kapacitaNadrze - stavNadrze;
+        stavNadrze = kapacitaNadrze;
+        return diff;
     }
 
     public double getStavNadrze() {
