@@ -7,6 +7,10 @@ public class Auto {
     private double stavNadrze;
     private boolean neojazdene;
 
+    public Auto() {
+        neojazdene = true;
+    }
+
     public void drive(double distanceInKm) {
         neojazdene = false;
         stavNadrze -= distanceInKm * FUEL_PER_KM;
