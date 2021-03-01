@@ -12,6 +12,10 @@ public class Auto {
         this.kapacitaNadrze = kapacitaNadrze;
     }
 
+    public Auto() {
+        this.kapacitaNadrze = 100;
+    }
+
     public void drive(double distanceInKm) {
         neojazdene = false;
         stavNadrze -= distanceInKm * FUEL_PER_KM;
