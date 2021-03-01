@@ -4,7 +4,7 @@ import sk.stuba.fei.uim.oop.car.Auto;
 
 public class Main {
     public static void main(String[] args) {
-        Auto skoda = new Auto();
+        Auto skoda = new Auto(80);
 
         System.out.println("Dotankoval som: " + skoda.dotankovat());
         System.out.println(skoda.currentState());
