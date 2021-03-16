@@ -13,6 +13,7 @@ public class Auto {
         this.kapacitaNadrze = kapacitaNadrze;
     }
 
+
     public Auto() {
         this(DEFAULT_CAPACITY);
     }

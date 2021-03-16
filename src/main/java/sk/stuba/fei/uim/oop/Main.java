@@ -12,6 +12,12 @@ public class Main {
 
         System.out.println("BMW ------------");
         testAuto(bmw);
+
+        Student student = new Student("Mato", "Pecka");
+        student.setId(5178209);
+        student.setVek(21);
+        System.out.println(student.getMeno() + " " + student.getPriezvisko() +" "+ student.getId() +" "+ student.getVek());
+
     }
 
     public static void testAuto(Auto auto) {
